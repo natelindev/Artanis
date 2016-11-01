@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Source\Artanis.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Dll.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\WorkerData.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\WorkerManager.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Assert.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Config.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logger.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Module">
+      <UniqueIdentifier>{2c8178fb-0262-4522-a939-5443de8ba1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{5d361f54-bd10-420d-b2ae-e7a9a6b3049a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Combat">
+      <UniqueIdentifier>{7df19710-8ce3-4fc0-a4db-719db98fa225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Combat\Micro">
+      <UniqueIdentifier>{b2e70210-71a5-4f6f-9688-292262ea3b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Combat\Macro">
+      <UniqueIdentifier>{54f333d5-3046-4957-88e7-008ff38a53bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{bc5f8060-d82d-45cb-b4d9-e9a6de96f0f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{13031126-19af-45aa-824a-1ed0764d074f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{1acf0455-af2c-4df6-a87f-9b5a9ec34b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{ed0010ae-8743-43d3-8425-693955c3a593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strategy">
+      <UniqueIdentifier>{8a53416d-3127-46a4-b334-d855cd6783b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Artanis.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\WorkerData.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\WorkerManager.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Assert.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\common.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Config.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logger.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageManager.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommander.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
