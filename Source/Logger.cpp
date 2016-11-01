@@ -5,7 +5,7 @@
 
 void Logger::logEvent(int level,const char* fmt, ...)
 {
-	if (level < Config::Logger::minLoglevel){return;} //Log level control
+	if (level < Config::Log::minLoglevel){return;} //Log level control
 	
 	va_list args;
 	va_start(args, fmt);
@@ -13,7 +13,7 @@ void Logger::logEvent(int level,const char* fmt, ...)
 	vsnprintf_s(buff, 256, fmt, args);
 	va_end(args);
 
-	if (Config::Logger::LogDisplay)
+	if (Config::Log::LogDisplay)
 	{
 		BWAPI::Broodwar->printf("[%s] ", levels[level]);
 		BWAPI::Broodwar->printf("%s\n",buff);
@@ -21,7 +21,7 @@ void Logger::logEvent(int level,const char* fmt, ...)
 	else
 	{
 		std::ofstream logStream;
-		logStream.open(Config::Logger::logFilePath.c_str(), std::ofstream::app);
+		logStream.open(Config::Log::logFilePath.c_str(), std::ofstream::app);
 		logStream << buff;
 		logStream.flush();
 		logStream.close();

@@ -1,9 +1,6 @@
 #pragma once
 #include "Config.h"
 #include <direct.h>
-#ifndef MAXPATHLEN
-#define MAXPATHLEN 100
-#endif
 
 namespace Config
 {
@@ -13,19 +10,18 @@ namespace Config
 		std::string Author = "Nathaniel";
 	}
 
-	namespace Logger
+	namespace Log
 	{
 		bool useLogger = true;
 		bool LogDisplay = true;
-		enum LogLevel minLoglevel = LOG_INFO;
+		Logger::LogLevel minLoglevel = Logger::LOG_INFO;
 		std::string logFilePath = get_working_path();
 		
 	}
 
 	namespace Module
 	{
-		extern enum Executors Hierarch = Fenix;//Hierarch would lead all the protoss for now
-
+		GameCommander::Executors Hierarch = GameCommander::Fenix;//Hierarch would lead all the protoss for now
 
 	}
 	
@@ -34,5 +30,5 @@ namespace Config
 std::string get_working_path()
 {
 	char temp[MAXPATHLEN];
-	return (getcwd(temp, MAXPATHLEN) ? std::string(temp) : std::string(""));
+	return (_getcwd(temp, MAXPATHLEN) ? std::string(temp) : std::string(""));
 }

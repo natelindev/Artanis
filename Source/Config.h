@@ -2,7 +2,12 @@
 
 #include "BWAPI.h"
 #include "common.h"
+#include "GameCommander.h"
+#include "Logger.h"
 #include <cassert>
+#ifndef MAXPATHLEN
+#define MAXPATHLEN 100
+#endif
 
 namespace Config
 {
@@ -12,19 +17,21 @@ namespace Config
 		extern std::string Author;
 	}
 
-	namespace Logger
+	namespace Log
 	{
 		extern bool useLogger;
 		extern bool LogDisplay;
-		extern enum LogLevel minLoglevel;
+		extern Logger::LogLevel minLoglevel;
 		extern std::string logFilePath;
 		
 	}
 
 	namespace Module
 	{
-		extern enum Executors Hierarch;//Hierarch would lead all the protoss for now
+		extern GameCommander::Executors Hierarch;//Hierarch would lead all the protoss for now
 
 
 	}
 }
+
+std::string get_working_path();

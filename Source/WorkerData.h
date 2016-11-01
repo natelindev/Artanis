@@ -48,7 +48,5 @@ public:
 	void setWorkerJob(BWAPI::Unit unit, enum WorkerJob job, BWAPI::Unit jobUnit);
 
 	const BWAPI::Unitset & getWorkers() const { return workers; }
-	WorkerData();
-	~WorkerData();
 
 };

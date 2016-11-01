@@ -68,6 +68,12 @@
     <ClInclude Include="..\Source\Assert.h">
       <Filter>Util</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\GameCommander.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\MessageManager.h">
+      <Filter>Message</Filter>
+    </ClInclude>
     <ClInclude Include="..\Source\common.h">
       <Filter>Util</Filter>
     </ClInclude>
@@ -76,12 +82,6 @@
     </ClInclude>
     <ClInclude Include="..\Source\Logger.h">
       <Filter>Util</Filter>
-    </ClInclude>
-    <ClInclude Include="MessageManager.h">
-      <Filter>Message</Filter>
-    </ClInclude>
-    <ClInclude Include="GameCommander.h">
-      <Filter>Strategy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
