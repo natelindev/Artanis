@@ -20,6 +20,7 @@
 
 #include "Logger.h"
 #include "Assert.h"
+#include "config.h"
 
 #define M_PI 3.14159265359
 

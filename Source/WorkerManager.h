@@ -22,3 +22,9 @@ public:
 
 	static WorkerManager &  Instance();
 };
+
+WorkerManager & WorkerManager::Instance()
+{
+	static WorkerManager instance;
+	return instance;
+}

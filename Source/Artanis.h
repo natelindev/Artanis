@@ -3,11 +3,11 @@
 #include <BWAPI.h>
 #include <iostream>
 #include <fstream>
-#include "WorkerManager.h"
+#include "MessageManager.h"
 
 class Artanis : public BWAPI::AIModule
 {
-	WorkerManager _workerManager;
+	GameCommander   _gameCommander;
 public:
 
 	void	onStart();

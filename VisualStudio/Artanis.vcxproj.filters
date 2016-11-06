@@ -22,14 +22,14 @@
     <ClCompile Include="..\Source\Logger.cpp">
       <Filter>Util</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\MessageManager.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\GameCommander.cpp">
+      <Filter>Strategy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Module">
-      <UniqueIdentifier>{2c8178fb-0262-4522-a939-5443de8ba1a2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Common">
-      <UniqueIdentifier>{5d361f54-bd10-420d-b2ae-e7a9a6b3049a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Combat">
       <UniqueIdentifier>{7df19710-8ce3-4fc0-a4db-719db98fa225}</UniqueIdentifier>
     </Filter>
@@ -48,11 +48,11 @@
     <Filter Include="Message">
       <UniqueIdentifier>{1acf0455-af2c-4df6-a87f-9b5a9ec34b43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Command">
-      <UniqueIdentifier>{ed0010ae-8743-43d3-8425-693955c3a593}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Strategy">
       <UniqueIdentifier>{8a53416d-3127-46a4-b334-d855cd6783b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{2c8178fb-0262-4522-a939-5443de8ba1a2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -118,7 +118,9 @@
     <ClCompile Include="..\Source\Config.cpp" />
     <ClCompile Include="..\Source\Dll.cpp" />
     <ClCompile Include="..\Source\Artanis.cpp" />
+    <ClCompile Include="..\Source\GameCommander.cpp" />
     <ClCompile Include="..\Source\Logger.cpp" />
+    <ClCompile Include="..\Source\MessageManager.cpp" />
     <ClCompile Include="..\Source\WorkerData.cpp" />
     <ClCompile Include="..\Source\WorkerManager.cpp" />
   </ItemGroup>

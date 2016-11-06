@@ -28,8 +28,11 @@ namespace Config
 
 	namespace Module
 	{
-		extern GameCommander::Executors Hierarch;//Hierarch would lead all the protoss for now
-
+		extern GameCommander::Executors defaultExecutor;//Hierarch would lead all the protoss for now
+		extern bool UsingGameCommander;
+		extern bool UsingWorkerManager;
+		extern bool UsingMessageManager;
+		
 
 	}
 }

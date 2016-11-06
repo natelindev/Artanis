@@ -21,8 +21,8 @@ namespace Config
 
 	namespace Module
 	{
-		GameCommander::Executors Hierarch = GameCommander::Fenix;//Hierarch would lead all the protoss for now
-
+		GameCommander::Executors defaultExecutor = GameCommander::Fenix;//Hierarch would lead all the protoss for now
+		bool useMessageManager = true;
 	}
 	
 }
